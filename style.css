@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+
+body {
+  font-size: 18px;
+  color: #66fcf1;
+  font-family: "Audiowide", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #0b0c10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 15px;
+}
+
+.nav-list a {
+  font-size: 24px;
+  display: block;
+  padding: 20px;
+  color: #66fcf1;
+}
+
+.nav-list a:hover {
+  background: #1f2833;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #1f2833, #0b0c10);
+  width: 100%;
+  height: 100vh;
+}
+
+.welcome-section p {
+  font-size: 35px;
+  font-style: italic;
+  color: #c5c6c7;
+}
+
+@media (max-width: 980px) {
+  .welcome-section h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-section h1 {
+    font-size: 30px;
+  }
+}
+
+.projects-section {
+  text-align: center;
+  background: #0b0c10;
+  padding: 30px;
+}
+
+.projects-section-header {
+  font-size: 40px;
+  margin: 0 auto 6rem auto;
+  max-width: 640px;
+  border-bottom: 2px solid #66fcf1;
+  
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-image {
+  height: calc(100% - 4.5rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  color: #66fcf1;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+@media (max-width: 980px) {
+  .project-title {
+    font-size: 1.5rem;
+  }
+}
+
+.project-tile {
+  background: #1f2833;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 40px;
+  border-radius: 5px;
+  color: white;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: #1f2833;
+}
+
+.contact-section-header h2 {
+  font-size: 50px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
